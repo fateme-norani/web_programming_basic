@@ -18,11 +18,13 @@
 <div class="contaner">
 	<div class="baner">
     	<div class="scrol">
-        	<div class="dv1"></div>
-            <div class="dv2"></div>
-            <div class="dv3"></div>
-            <div class="dv4"></div>
-            <div class="dv5"></div>
+        	<?php 
+				$d=dir('./images');
+				while($f=$d->read()){
+					if(strtolower(substr($f,-4))!='.jpg') continue;
+					echo "<img src='images/$f' />";	
+				}
+			?>
 		</div>
         <ul class="btn">
         	<li></li>

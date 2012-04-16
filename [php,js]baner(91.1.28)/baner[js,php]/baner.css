@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;	
+}
+
+div.contaner{
+	width:980px;
+	margin:20px auto;
+	position:relative;
+}
+
+div.baner{
+	width:980px;
+	min-height:550px;
+	overflow:hidden;
+	position:relative;	
+}
+
+div.baner div.scrol{
+	width:5000px;
+	height:534px;
+	position:absolute;
+	top:0;
+	left:0;
+	-webkit-transition:all 800ms;
+	-webkit-transition-timing-function:cubic-bezier(0,0.7,0.3,1);
+}
+
+div.baner div.scrol > div{
+	width:980px;
+	height:534px;
+	float:left;	
+	background-repeat:no-repeat;
+	
+}
+
+div.baner div.scrol > div.dv1{
+	background-image:url(images/b1.jpg);
+}
+
+div.baner div.scrol > div.dv2{
+	background-image:url(images/b2.jpg);	
+}
+
+div.baner div.scrol > div.dv3{
+	background-image:url(images/b3.jpg);	
+}
+
+div.baner div.scrol > div.dv4{
+	background-image:url(images/b4.jpg);	
+}
+
+div.baner div.scrol > div.dv5{
+	background-image:url(images/b5.jpg);	
+}
+
+div.baner ul.btn{
+	width:250px;
+	min-height:20px;
+	position:absolute;
+	bottom:30px;
+	right:0;
+	list-style-type:none;	
+}
+
+div.baner ul.btn li{
+	width:30px;
+	float:left;
+	height:10px;
+	background-color:#0099FF;
+	margin-right:6px;
+	-webkit-transition:all 800ms;
+	-moz-transition:all 800ms;	
+}
+
+div.baner ul.btn li:hover
+{	height:20px;
+	margin-top:-5px;
+	background-color:#03C;
+	cursor:pointer;
+	-webkit-transition-duration:400ms;
+}
+
+
+div.contaner div.dokme{
+	position:absolute;
+	left:40px;
+	bottom:40px;
+		
+}
+div.contaner div.dokme input{
+	background-color:transparent;
+	width:70px;
+	height:70px;
+	border:none;
+	cursor:pointer;	
+}
+
+div.contaner div.dokme input.nxt{
+	background-image:url(images/next-icon.png);
+}
+
+div.contaner div.dokme input.bak{
+	background-image:url(images/back-icon.png);
+}

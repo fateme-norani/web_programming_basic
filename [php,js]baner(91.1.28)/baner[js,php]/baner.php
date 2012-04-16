@@ -27,11 +27,11 @@
 			?>
 		</div>
         <ul class="btn">
-        	<li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        	<?php
+				for($i=1;$i<=$piclen;$i++){
+					echo "<li></li>";	
+				}
+			?>	
         </ul> 
     </div>
     <div class="dokme">

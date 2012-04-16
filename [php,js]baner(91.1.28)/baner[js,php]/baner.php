@@ -39,10 +39,3 @@
 </div> 
 </body>           
 </html>
-<?php 
-				$d=dir('./images');
-				while($f=$d->read()){
-					if(strtolower(substr($f,-4))!='.jpg') continue;
-					echo "<img src='images/$f' />";	
-				}
-			?>

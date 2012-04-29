@@ -9,11 +9,12 @@
 div.container{
 	width:980px;
 	margin:0 auto;
+	padding-top:1px;
 }
 
 div.banner{
 	width:980px;
-	height:570px;
+	height:575px;
 	overflow:hidden;
 	margin-top:20px;
 	position:relative;
@@ -25,7 +26,10 @@ div.banner div.scroll{
 	position:absolute;
 	left:0;
 	top:0;
-	-webkit-transition:all 800ms;
+	-webkit-transition-property:all;
+	-webkit-transition-duration:800ms;
+	-webkit-transition-timing-function:cubic-bezier(0,0.7,0.3,1);
+	
 }
 
 div.banner div.scroll > div{
@@ -60,6 +64,7 @@ div.banner div.scroll > div.adv5{
 div.banner ul.btn{
 	list-style-type:none;
 	width:200px;
+	height:16px;
 	position:absolute;
 	right:0;
 	bottom:0;
@@ -72,13 +77,14 @@ div.banner ul.btn li{
 	margin-right:5px;
 	background-color:#333;
 	cursor:pointer;
-	-webkit-transition:all 800ms;
+	-webkit-transition:all 1000ms;
 }
 
 div.banner ul.btn li:hover,
 div.banner ul.btn li.active{
 	background-color:#39D;
-	height:18px;
-	margin-top:-8px;
-	-webkit-transition-duration:400ms;
+	height:22px;
+	margin-top:-6px;
+	-webkit-transition-duration:300ms;
 }
+
